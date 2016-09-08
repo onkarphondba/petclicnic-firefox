@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample.PetClinicTest" duration-ms="223" started-at="2016-09-08T09:24:25Z" finished-at="2016-09-08T09:24:25Z">
+  <suite name="Sample.PetClinicTest" duration-ms="10590" started-at="2016-09-08T12:51:56Z" finished-at="2016-09-08T12:52:06Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="223" started-at="2016-09-08T09:24:25Z" finished-at="2016-09-08T09:24:25Z">
+    <test name="Command line test" duration-ms="10590" started-at="2016-09-08T12:51:56Z" finished-at="2016-09-08T12:52:06Z">
       <class name="Sample.PetClinicTest">
-        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:Sample.PetClinicTest@90f6bfd]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-09-08T14:54:25Z" finished-at="2016-09-08T14:54:25Z">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:Sample.PetClinicTest@90f6bfd]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-09-08T18:21:56Z" finished-at="2016-09-08T18:21:56Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: VISTA
@@ -62,11 +62,11 @@ Driver info: driver.version: FirefoxDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="testEasy()[pri:0, instance:Sample.PetClinicTest@90f6bfd]" name="testEasy" duration-ms="1" started-at="2016-09-08T14:54:25Z" finished-at="2016-09-08T14:54:25Z">
+        <test-method status="SKIP" signature="testEasy()[pri:0, instance:Sample.PetClinicTest@90f6bfd]" name="testEasy" duration-ms="1" started-at="2016-09-08T18:22:06Z" finished-at="2016-09-08T18:22:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:Sample.PetClinicTest@90f6bfd]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-09-08T14:54:25Z" finished-at="2016-09-08T14:54:25Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:Sample.PetClinicTest@90f6bfd]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-09-08T18:22:06Z" finished-at="2016-09-08T18:22:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

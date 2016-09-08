@@ -18,23 +18,23 @@ public class PetClinicTest {
 	private WebDriver driver;
   @BeforeTest
    public void beforeTest() {
-	//System.setProperty("webdriver.chrome.driver", "//home//ec2-user//chromedriver");  
+	//System.setProperty("webdriver.chrome.driver", "C://Tools//chromedriver.exe");  
 	//driver = new ChromeDriver(); 
- File pathToBinary = new File("/home/ec2-user/firefox/firefox-bin");
+ File pathToBinary = new File("/opt/firefox");
  FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
  FirefoxProfile firefoxProfile = new FirefoxProfile();
   driver = new FirefoxDriver(ffBinary,firefoxProfile);
-//driver = new FirefoxDriver();  
+  // driver = new FirefoxDriver();  
   }
   @Test
   public void testEasy() throws InterruptedException
   {   
 	  	//driver.get("http://192.168.3.102:8083/petclinic/");  
-	  	driver.get("http://192.168.1.118:8084/petclinic/");  
+	  	driver.get("http://localhost:8084/petclinic/");  
 	  	WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("html/body/div[1]/div[@class='container xd-container']/h2")));
 		 driver.manage().window().maximize();	
-	  	//Thread.sleep(2000);
+	  	Thread.sleep(2000);
 	  	String title = driver.getTitle();   
         System.out.println("Home Page Header : "+title);
         
@@ -58,7 +58,7 @@ public class PetClinicTest {
         driver.findElement(By.id("name")).sendKeys("MyPet");
         driver.findElement(By.id("birthDate")).click();
         driver.findElement(By.linkText("1")).click();
-        new Select(driver.findElement(By.id("type"))).selectByVisibleText("bird");
+         new Select(driver.findElement(By.id("type"))).selectByVisibleText("bird");
         driver.findElement(By.cssSelector("button.btn.btn-default")).click();
         //Function to add visit
         driver.findElement(By.linkText("Add Visit")).click();
@@ -72,6 +72,8 @@ public class PetClinicTest {
        // driver.findElement(By.linkText("PDF")).click();
         Thread.sleep(2000);       
         
+       
+		
     }
 
   @AfterTest
