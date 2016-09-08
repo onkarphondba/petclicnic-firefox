@@ -1,7 +1,12 @@
 package Sample;
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,8 +18,12 @@ public class PetClinicTest {
 	private WebDriver driver;
   @BeforeTest
    public void beforeTest() {
-	System.setProperty("webdriver.chrome.driver", "//home//ec2-user//chromedriver");  
-	driver = new ChromeDriver(); 
+	//System.setProperty("webdriver.chrome.driver", "//home//ec2-user//chromedriver");  
+	//driver = new ChromeDriver(); 
+ File pathToBinary = new File("//usr//local//firefox//firefox-bin");
+ FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+ FirefoxProfile firefoxProfile = new FirefoxProfile();
+ FirefoxDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
   }
   @Test
   public void testEasy() throws InterruptedException

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Sample.PetClinicTest">
-              <span class="suite-name border-failed">Sample.PetClinicTest</span>
+              <span class="suite-name border-skipped">Sample.PetClinicTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Sample.PetClinicTest" class="hide-methods failed suite-Sample.PetClinicTest"> (hide)</a> <!-- hide-methods failed suite-Sample.PetClinicTest -->
-                      <a href="#" panel-name="suite-Sample.PetClinicTest" class="show-methods failed suite-Sample.PetClinicTest"> (show)</a> <!-- show-methods failed suite-Sample.PetClinicTest -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Sample.PetClinicTest" class="hide-methods skipped suite-Sample.PetClinicTest"> (hide)</a> <!-- hide-methods skipped suite-Sample.PetClinicTest -->
+                      <a href="#" panel-name="suite-Sample.PetClinicTest" class="show-methods skipped suite-Sample.PetClinicTest"> (show)</a> <!-- show-methods skipped suite-Sample.PetClinicTest -->
                     </span>
-                    <div class="method-list-content failed suite-Sample.PetClinicTest">
+                    <div class="method-list-content skipped suite-Sample.PetClinicTest">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Sample.PetClinicTest" title="Sample.PetClinicTest" hash-for-method="testEasy">testEasy</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Sample.PetClinicTest -->
+                    </div> <!-- method-list-content skipped suite-Sample.PetClinicTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,9 +116,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sample.PetClinicTest" class="panel Sample.PetClinicTest">
-          <div class="suite-Sample.PetClinicTest-class-failed">
+          <div class="suite-Sample.PetClinicTest-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Sample.PetClinicTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -127,19 +127,10 @@
                   <a name="testEasy">
                   </a> <!-- testEasy -->
                   <span class="method-name">testEasy</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at Sample.PetClinicTest.testEasy(PetClinicTest.java:25)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sample.PetClinicTest-class-failed -->
+          </div> <!-- suite-Sample.PetClinicTest-class-skipped -->
         </div> <!-- panel Sample.PetClinicTest -->
         <div panel-name="test-xml-Sample.PetClinicTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -195,12 +186,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEasy')
 data.setCell(0, 2, 'Sample.PetClinicTest')
-data.setCell(0, 3, 33090);
+data.setCell(0, 3, 1);
 window.suiteTableData['Sample.PetClinicTest']= { tableData: data, tableDiv: 'times-div-Sample.PetClinicTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Sample.PetClinicTest">
               </div> <!-- times-div-Sample.PetClinicTest -->
             </div> <!-- times-div -->
@@ -228,21 +219,15 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Sample.PetClinicTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testEasy</span>
-                <span class="method-start">53597 ms</span>
+                <span class="method-start">52671 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">afterTest</span>
-                <span class="method-start">86844 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

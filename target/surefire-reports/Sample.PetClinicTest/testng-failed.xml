@@ -7,7 +7,6 @@
         <methods>
           <include name="beforeTest"/>
           <include name="testEasy"/>
-          <include name="afterTest"/>
         </methods>
       </class> <!-- Sample.PetClinicTest -->
     </classes>
