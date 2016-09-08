@@ -20,10 +20,11 @@ public class PetClinicTest {
    public void beforeTest() {
 	//System.setProperty("webdriver.chrome.driver", "//home//ec2-user//chromedriver");  
 	//driver = new ChromeDriver(); 
- File pathToBinary = new File("//usr//bin//firefox");
- FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
- FirefoxProfile firefoxProfile = new FirefoxProfile();
-  driver = new FirefoxDriver(ffBinary,firefoxProfile);
+ //File pathToBinary = new File("//usr//bin//firefox");
+ //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+ //FirefoxProfile firefoxProfile = new FirefoxProfile();
+  //driver = new FirefoxDriver(ffBinary,firefoxProfile);
+driver = new FirefoxDriver();  
   }
   @Test
   public void testEasy() throws InterruptedException
