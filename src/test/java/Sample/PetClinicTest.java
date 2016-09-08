@@ -18,7 +18,7 @@ public class PetClinicTest {
 	private WebDriver driver;
   @BeforeTest
    public void beforeTest() {
-	System.setProperty("webdriver.chrome.driver", "//usr//bin//./chromedriver");  
+	System.setProperty("webdriver.chrome.driver", "//usr//bin//chromedriver");  
 	driver = new ChromeDriver(); 
  //File pathToBinary = new File("//usr//local//firefox//firefox-bin");
  //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
