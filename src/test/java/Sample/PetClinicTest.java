@@ -1,11 +1,6 @@
 package Sample;
-import java.io.File;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,10 +13,10 @@ public class PetClinicTest {
    public void beforeTest() {
 	//System.setProperty("webdriver.chrome.driver", "C://Tools//chromedriver.exe");  
 	//driver = new ChromeDriver(); 
- File pathToBinary = new File("//opt//firefox47/bin//firefox ");
- FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
- FirefoxProfile firefoxProfile = new FirefoxProfile();
- driver = new FirefoxDriver(ffBinary,firefoxProfile);
+ //File pathToBinary = new File("//opt//firefox47/bin//firefox ");
+ //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+ //FirefoxProfile firefoxProfile = new FirefoxProfile();
+ //driver = new FirefoxDriver(ffBinary,firefoxProfile);
   //driver = new FirefoxDriver();  
   }
   @Test
