@@ -1,7 +1,11 @@
 package Sample;
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,17 +18,17 @@ public class PetClinicTest {
    public void beforeTest() {
 	//System.setProperty("webdriver.chrome.driver", "C://Tools//chromedriver.exe");  
 	//driver = new ChromeDriver(); 
- //File pathToBinary = new File("//usr//local//firefox//firefox-bin");
- //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
- //FirefoxProfile firefoxProfile = new FirefoxProfile();
- //driver = new FirefoxDriver(ffBinary,firefoxProfile);
-  driver = new FirefoxDriver();  
+ File pathToBinary = new File("//opt//firefox47/bin//firefox ");
+ FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+ FirefoxProfile firefoxProfile = new FirefoxProfile();
+ driver = new FirefoxDriver(ffBinary,firefoxProfile);
+  //driver = new FirefoxDriver();  
   }
   @Test
   public void testEasy() throws InterruptedException
   {   
-	  	//driver.get("http://192.168.3.102:8083/petclinic/");  
-	  	driver.get("http://localhost:8084/petclinic/");  
+	  	driver.get("http://192.168.99.1:8084/petclinic/");  
+	  	//driver.get("http://localhost:8084/petclinic/");  
 	  	WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("html/body/div[1]/div[@class='container xd-container']/h2")));
 		 driver.manage().window().maximize();	
