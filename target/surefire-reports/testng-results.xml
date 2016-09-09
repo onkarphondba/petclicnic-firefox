@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample.PetClinicTest" duration-ms="106170" started-at="2016-09-09T09:11:15Z" finished-at="2016-09-09T09:13:02Z">
+  <suite name="Sample.PetClinicTest" duration-ms="208205" started-at="2016-09-09T10:48:17Z" finished-at="2016-09-09T10:51:45Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="106170" started-at="2016-09-09T09:11:15Z" finished-at="2016-09-09T09:13:02Z">
+    <test name="Command line test" duration-ms="208205" started-at="2016-09-09T10:48:17Z" finished-at="2016-09-09T10:51:45Z">
       <class name="Sample.PetClinicTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Sample.PetClinicTest@4909b8da]" name="beforeTest" is-config="true" duration-ms="56856" started-at="2016-09-09T14:41:15Z" finished-at="2016-09-09T14:42:12Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Sample.PetClinicTest@38082d64]" name="beforeTest" is-config="true" duration-ms="36085" started-at="2016-09-09T16:18:17Z" finished-at="2016-09-09T16:18:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:Sample.PetClinicTest@4909b8da]" name="testEasy" duration-ms="47572" started-at="2016-09-09T14:42:14Z" finished-at="2016-09-09T14:43:02Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:Sample.PetClinicTest@38082d64]" name="testEasy" duration-ms="171389" started-at="2016-09-09T16:18:54Z" finished-at="2016-09-09T16:21:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
