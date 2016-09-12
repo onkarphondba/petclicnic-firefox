@@ -11,7 +11,7 @@ public class PetClinicTest {
 	public WebDriver driver;
   @BeforeTest
    public void beforeTest() {
-	//System.setProperty("webdriver.chrome.driver", "C://Tools//chromedriver.exe");  
+	System.setProperty("webdriver.gecko.driver", "/var/jenkins_home/workspace/petclinic-firefox/geckodriver");  
 	//driver = new ChromeDriver(); 
  //File pathToBinary = new File("//opt//firefox47/bin//firefox ");
  //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
