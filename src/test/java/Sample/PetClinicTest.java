@@ -3,13 +3,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class PetClinicTest {
-	private WebDriver driver;
+	public WebDriver driver;
   @BeforeTest
    public void beforeTest() {
 	//System.setProperty("webdriver.chrome.driver", "C://Tools//chromedriver.exe");  
