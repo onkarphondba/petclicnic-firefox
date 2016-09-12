@@ -9,27 +9,31 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class PetClinicTest {
-	public WebDriver driver;
-  @BeforeTest
-   public void beforeTest() {
-	System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/Petclininc/geckodriver");  
-	//driver = new ChromeDriver(); 
- //File pathToBinary = new File("//opt//firefox47/bin//firefox ");
- //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
- //FirefoxProfile firefoxProfile = new FirefoxProfile();
- //driver = new FirefoxDriver(ffBinary,firefoxProfile);
- driver = new FirefoxDriver();  
-  }
-  @Test
+	//public WebDriver driver;
+ 
+//	@BeforeTest
+//   public void beforeTest() {
+//	System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/Petclininc/geckodriver");  
+//	//driver = new ChromeDriver(); 
+// //File pathToBinary = new File("//opt//firefox47/bin//firefox ");
+// //FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+// //FirefoxProfile firefoxProfile = new FirefoxProfile();
+// //driver = new FirefoxDriver(ffBinary,firefoxProfile);
+// driver = new FirefoxDriver();  
+//  }
+  
+	@Test
   public void testEasy() throws InterruptedException
   {   
-	  	driver.get("http://192.168.99.1:8084/petclinic/");  
+		System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/Petclininc/geckodriver"); 
+		WebDriver driver =new FirefoxDriver();
+		driver.navigate().to("http://192.168.99.1:8084/petclinic/");
 	  	//driver.get("http://localhost:8084/petclinic/");  
-	  	WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("html/body/div[1]/div[@class='container xd-container']/h2")));
+	  	//WebDriverWait wait = new WebDriverWait(driver, 20);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("html/body/div[1]/div[@class='container xd-container']/h2")));
 		 driver.manage().window().maximize();	
 	  	Thread.sleep(2000);
-	  	String title = driver.getTitle();   
+	  	/*String title = driver.getTitle();   
         System.out.println("Home Page Header : "+title);
         
 //       //Function to Add Owner
@@ -83,7 +87,8 @@ public class PetClinicTest {
 		
 		driver.findElement(By.xpath("//form//div/button[@class='btn btn-default']")).click();
        
-		
+		*/
+	  	driver.close();
     }
 
 //  @AfterTest
