@@ -1,11 +1,6 @@
 package Sample;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class PetClinicTest {
@@ -25,7 +20,8 @@ public class PetClinicTest {
 	@Test
   public void testEasy() throws InterruptedException
   {   
-		System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/Petclininc/geckodriver"); 
+		System.setProperty("webdriver.gecko.driver", "/jenkins/jenkins/workspace/Petclininc/geckodriver"); 
+		//System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/Petclininc/geckodriver"); 
 		WebDriver driver =new FirefoxDriver();
 		driver.navigate().to("http://192.168.99.1:8084/petclinic/");
 	  	//driver.get("http://localhost:8084/petclinic/");  
