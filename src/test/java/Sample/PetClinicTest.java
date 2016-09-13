@@ -20,7 +20,7 @@ public class PetClinicTest {
 	@Test
   public void testEasy() throws InterruptedException
   {   
-		System.setProperty("webdriver.gecko.driver", "/jenkins/jenkins/workspace/Petclininc/geckodriver"); 
+		System.setProperty("webdriver.gecko.driver", "/var/jenkins_home/workspace/Petclininc/geckodriver"); 
 		//System.setProperty("webdriver.gecko.driver", "/var/lib/jenkins/workspace/Petclininc/geckodriver"); 
 		WebDriver driver =new FirefoxDriver();
 		driver.navigate().to("http://192.168.99.1:8084/petclinic/");
